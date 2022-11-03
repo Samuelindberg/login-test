@@ -1,11 +1,18 @@
-let user = ["lossallos","Testpass"];
+let user ={
+    userName:["lossallos","salle1"],
+    passwordInfo: ["Testpass","Salle1"]
+};
+
 function loginFunction(){
-    let userName = document.getElementById("username").value;
-    let password = document.getElementById("password").value;
-    if(userName==user[0] && password==user[1]){
-        alert("rätt uppgifter");
-    }   
-    else{
-        alert("fel uppgifter");
-    }
+    const person = {
+         usernameInput: document.getElementById("username").value,
+
+         passwordInput: document.getElementById("password").value
+    };
+         if(person.usernameInput == user.userName[0] && person.passwordInput == user.passwordInfo[0]){
+          
+            alert("rätt uppgifter");
+        }   
 }
+
+
