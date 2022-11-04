@@ -1,18 +1,20 @@
+const succesful = document.getElementById("conformation");
 let user ={
-    userName:["lossallos","salle1"],
-    passwordInfo: ["Testpass","Salle1"]
+    users:["lossallos","salle1","salle2","salle3","elsaF"],
+    password: ["Testpass","salle1","salle2","salle3","elsa!"]
 };
-
+let rightUser = false;
 function loginFunction(){
     const person = {
          usernameInput: document.getElementById("username").value,
-
          passwordInput: document.getElementById("password").value
     };
-         if(person.usernameInput == user.userName[0] && person.passwordInput == user.passwordInfo[0]){
+        for(i=0;i<user.users.length;i++){
           
-            alert("rätt uppgifter");
-        }   
-}
-
-
+            if(person.usernameInput == user.users[i] && person.passwordInput == user.password[i]){
+                succesful.style.color="black"; 
+             rightUser=true; 
+             i=user.users.length;
+            }
+        }
+    }

@@ -10,21 +10,23 @@
 </head>
 <body>
     <div class="container">
-        <h1>Logga in</h1>
+        <h1 #title>Logga in</h1>
         <div class="login-container">
             <form>
-                <div class="userna">
-                    <label  for="användarnamn">Användarnamn:</label><br>
+                <div class="users">
+                    <label  for="användarnamn">Användarnamn</label><br>
                     <input id="username" type="text"><br>
                 </div>
                <div class="password">
                 <label for="lösenord">Lösenord</label><br>
-                <input id="password" type="text">
+                <input id="password" type="password">
                </div>
-              <button onclick="loginFunction()" class="log-in">Logga in</button>
+              <button type="submit" class="log-in">Logga in</button>
             </form>
         </div>
-      
+        <div id="conformation" class="conformation">
+            <h1 >Rätt uppgifter! Välkommen!</h1>
+        </div>
     </div>
 </body>
 </html>
