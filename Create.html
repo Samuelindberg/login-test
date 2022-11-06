@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
     <title>Skapa konto</title>
 </head>
 <body>
@@ -14,17 +15,19 @@
             <form>
                 <div class="users">
                     <label  for="användarnamn">Användarnamn</label><br>
-                    <input id="username" type="text"><br>
+                    <input id="newUsername" type="text"><br>
                 </div>
                <div class="password">
                 <label for="lösenord">Lösenord</label><br>
-                <input id="password" type="password">
+                <input id="newPassword" type="password"><br>
+                <label for="lösenord">Bekräfta lösenord</label><br>
+                <input id="newPasswordConformation" type="password">
                </div>
               <button type="submit" class="log-in">Skapa</button>
             </form>
         </div>
-        <div id="conformation" class="conformation">
-            <h1 >Rätt uppgifter! Välkommen!</h1>
+        <div id="create-complete">
+            <h1 >Konto skapat!</h1>
         </div>
     </div>
 </body>
